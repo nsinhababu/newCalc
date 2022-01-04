@@ -1,0 +1,58 @@
+nav {
+  height: 70px;
+}
+
+.result {
+  min-height: 50px;
+  max-width: 570px;
+  margin: 0 auto;
+  padding: 3px 8px;
+  display: flex;
+  justify-content: center;
+  border-radius: 3px;
+  font-size: 2rem;
+  background-color: rgba(210, 180, 140, 0.158);
+  overflow-x: scroll;
+}
+
+.container {
+  width: 570px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 3px;
+}
+
+.number-btn,
+.sign-btn,
+.equal-btn,
+.reset-btn,
+.back-btn {
+  background-color: rgba(70, 131, 180, 0.219);
+  width: 90px;
+  height: 50px;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 2rem;
+  border: 1px solid lightgray;
+}
+
+.number-btn:active,
+.sign-btn:active,
+.equal-btn:active {
+  border: 1px solid rgba(50, 205, 50, 0.322);
+  box-shadow: 2px 2px 5px rgba(50, 205, 50, 0.329);
+  color: limegreen;
+}
+
+.back-btn:active {
+  border: 1px solid rgba(255, 0, 0, 0.342);
+  color: rgba(255, 68, 0, 0.719);
+  box-shadow: 2px 2px 5px rgba(255, 0, 0, 0.342);
+}
+.reset-btn:active {
+  border: 1px solid rgba(255, 0, 0, 0.466);
+  color: rgba(255, 0, 0, 0.623);
+  box-shadow: 2px 2px 5px rgba(255, 0, 0, 0.486);
+}
