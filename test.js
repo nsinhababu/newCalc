@@ -48,3 +48,8 @@ numberSignBtnClickController(signBtns);
 resetBtn.addEventListener('click', () => {
   resultDiv.innerText = '';
 });
+
+backBtn.addEventListener('click', () => {
+  let slicedText = resultDiv.innerText.slice(0, -1);
+  resultDiv.innerText = slicedText;
+});
