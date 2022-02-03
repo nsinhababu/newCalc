@@ -53,3 +53,8 @@ backBtn.addEventListener('click', () => {
   let slicedText = resultDiv.innerText.slice(0, -1);
   resultDiv.innerText = slicedText;
 });
+
+equalBtn.addEventListener('click', () => {
+  let equation = resultDiv.innerText;
+  resultDiv.innerText = eval(equation);
+});
