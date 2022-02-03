@@ -43,10 +43,25 @@ let isSign = false;
 function numberSignBtnClickController(btnType) {
   for (let i = 0; i < btnType.length; i++) {
     btnType[i].addEventListener('click', () => {
-      resultDiv.innerText += btnType[i].innerText;
+      if (btnType == numberBtns) {
+        isSign = false;
+        resultDiv.innerText += btnType[i].innerText;
+      }
+      if (btnType == signBtns && isSign == false) {
+        isSign = true;
+        resultDiv.innerText += btnType[i].innerText;
+      }
     });
   }
 }
+
+// function numberSignBtnClickController(btnType) {
+//   for (let i = 0; i < btnType.length; i++) {
+//     btnType[i].addEventListener('click', () => {
+//       resultDiv.innerText += btnType[i].innerText;
+//     });
+//   }
+// }
 
 numberSignBtnClickController(numberBtns);
 numberSignBtnClickController(signBtns);
