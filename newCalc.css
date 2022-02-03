@@ -1,3 +1,11 @@
+.main {
+  max-width: 580px;
+  margin: 20px auto;
+  border-radius: 18px;
+  box-shadow: 3px 2px 5px 4px rgba(173, 216, 230, 0.808);
+  padding: 20px;
+}
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -20,14 +28,32 @@
 }
 
 .number-btn,
+.sign-btn {
+  width: 150px;
+  margin: 5px;
+  height: 50px;
+}
+
+.number-btn {
+  background-color: rgba(70, 131, 180, 0.219);
+}
+
+.sign-btn {
+  background-color: rgba(95, 158, 160, 0.815);
+}
+
+.function-btn {
+  height: 90px;
+  width: 83px;
+  color: white;
+  margin: 5px 0 5px 5px;
+}
+
+.number-btn,
 .sign-btn,
 .function-btn {
-  width: 150px;
-  background-color: rgba(70, 131, 180, 0.219);
   /* width: 90px; */
-  height: 50px;
   border-radius: 5px;
-  margin: 5px;
   font-size: 2rem;
   border: 1px solid lightgray;
 }
@@ -38,17 +64,20 @@ h1 {
 }
 
 .result {
-  border-left: 7px solid blue;
-
+  /* border-left: 7px solid blue; */
   min-height: 100px;
+  height: 180px;
+
   width: 100%;
-  max-width: 1656px;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 3px 8px;
   display: flex;
-  justify-content: center;
-  font-size: 2rem;
-  background-color: aliceblue;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 2.5rem;
+  background-color: rgba(173, 216, 230, 0.5);
+  box-sizing: border-box;
 }
 /*
 .container {

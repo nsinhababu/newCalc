@@ -32,7 +32,13 @@ const equalBtn = document.querySelectorAll('.function-btn')[2];
 const numberBtns = document.querySelectorAll('.number-btn');
 const signBtns = document.querySelectorAll('.sign-btn');
 
+//styles for button
+resetBtn.style.backgroundColor = 'red';
+backBtn.style.backgroundColor = 'cornflowerblue';
+equalBtn.style.backgroundColor = 'green';
+
 console.log(numberBtns, signBtns);
+let isSign = false;
 
 function numberSignBtnClickController(btnType) {
   for (let i = 0; i < btnType.length; i++) {
@@ -52,6 +58,7 @@ resetBtn.addEventListener('click', () => {
 backBtn.addEventListener('click', () => {
   let slicedText = resultDiv.innerText.slice(0, -1);
   resultDiv.innerText = slicedText;
+  isSign = false;
 });
 
 equalBtn.addEventListener('click', () => {
